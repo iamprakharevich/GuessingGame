@@ -18,7 +18,6 @@ async function lower(){
 function guess(){
     document.querySelector(".fa-caret-up").setAttribute("style", "color: white; opacity: .3;")
     document.querySelector(".fa-caret-down").setAttribute("style", "color: white; opacity: .3;")
-    console.log(computerGuess)
     let uservalue = document.querySelector(".input-field").value;
         if(uservalue > computerGuess){
             lower();
