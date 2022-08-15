@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/normalize.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Guessing game</title>
+</head>
+<body>
+    <header>
+        <img class="logo-image" src="../src/img/main.png" alt="logo" height="300">
+    </header>
+    <main>
+        <i class="fa-solid fa-caret-up"></i>
+        <input class="input-field" type="text" placeholder="Enter your guess">
+        <i class="fa-solid fa-caret-down"></i>
+    </main>
+    <footer>
+        <a href="#settings"><i class="fa-solid fa-gear"></i></a>
+        <div class="copyright">
+            2022 by<a href="https://github.com/iamprakharevich" target="_blank"><div class="logo">IAMPRAKHAREVICH</div></a>
+        </div>
+        <a href="#links"><i class="fa-solid fa-link"></i></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/d1f6e23e8c.js" crossorigin="anonymous"></script>
+    <script src="../src/js/index.js"></script>
+    <div id="settings" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close">X</a>
+                <div class="popup_title">Settings</div>
+                <div class="popup_settings">
+                    <div class="fs">
+                        <span>Min:</span>
+                        <input class="min" type="text" value="0">
+                    </div>
+                    <div class="ss">
+                        <span>Max:</span>
+                        <input class="max" type="text" value="100">
+                    </div>
+                    <div class="ts">
+                        <a href="#rules">Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rules" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#settings" class="popup_close">X</a>
+                <div class="popup_title">Rules</div>
+                <span>The computer guesses a number in the numerical range specified in the settings, and the user tries to guess it by entering a number in the input field. When you enter a number, hints appear in the form of HIGHER or LOWER arrows that light up until the number is guessed.</span>
+            </div>
+        </div>
+    </div>
+    <div id="links" class="links">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close">X</a>
+                <a href="https://github.com/iamprakharevich" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/iamprakharevich/?locale=en_US" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
